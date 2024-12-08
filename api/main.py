@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
 
 from .models import models, schemas
-from .controllers import orders
+from .controllers import orders, sandwiches
 from .dependencies.database import engine, get_db
 
 models.Base.metadata.create_all(bind=engine)
